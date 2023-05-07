@@ -249,7 +249,8 @@
   z-index: 2;
 }
 .page__container {
-  min-height: 858px;
+  min-height: 758px;
+  max-width: 935px;
   padding: 80px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -271,7 +272,7 @@
   color: #FFFFFF;
 }
 .page__body {
-  width: 935px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -403,7 +404,6 @@
 
 .main {
   position: relative;
-  height: 1000px;
 }
 .main__bg {
   position: absolute;
