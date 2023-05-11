@@ -1,0 +1,93 @@
+.menu{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 140;
+   background: rgba(92, 7, 7, 0.85);
+   &__container{
+      padding-top: 30px;
+   }
+   .header__logo{
+      display: flex;
+      justify-content: center;
+      margin: 0 0 0 auto;
+   }
+   &__body{
+      display: flex;
+      h2{
+         font-weight: 500;
+         font-size: 24px;
+         line-height: 29px;
+         color: #FFFFFF;
+         margin-bottom: 20px;
+      }
+      overflow: auto;
+   }
+   &__wrapper{
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+   }
+   &__list{
+      &-item{
+         &:not(:last-child){
+            margin-bottom: 15px;
+         }
+         a{
+            font-size: 18px;
+            line-height: 22px;
+            color: #FFFFFF;
+         }
+      }
+   }
+   &__box{
+      display: flex;
+      align-items: center;
+      margin-bottom: 50px;
+      justify-content: center;
+   }
+   &__burger{
+      display: block;
+      margin: 0 0 0 auto;
+      cursor: pointer;
+      position: relative;
+      width: 30px;
+      z-index: 5;
+      margin-right: 65px;
+      height: 20px;
+      span{
+         position: absolute;
+         width: 100%;
+         height: 3.5px;
+         background-color: #fff;
+         left: 0;
+         top: 9px;
+         transition: all 0.3s ease 0s;
+      }
+      &::before, &::after{
+         content: '';
+         position: absolute;
+         width: 100%;
+         height: 3.5px;
+         background-color: #fff;
+         left: 0;
+      }
+   }
+   &__burger::before{
+      transform: rotate(45deg);
+      top: 8px;
+      transition: all 0.2s ease 0s;
+   }
+   &__burger{
+      span{
+         transform: scale(0);
+         transition: all 0.2s ease 0s;
+      }
+   }
+   &__burger::after{
+      transform: rotate(-45deg);
+      bottom: 9px;
+   }
+}

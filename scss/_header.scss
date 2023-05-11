@@ -51,11 +51,8 @@
       display: flex;
       align-items: center;
    }
-   &__menu{
+   &__list{
       display: flex;
-      width: 0;
-      overflow: hidden;
-      transition: width .4s ease-in-out;
       &-item{
          &:not(:last-child){
             margin-right: 35px;
@@ -120,33 +117,5 @@
    &__burger._active::after{
       transform: rotate(-45deg);
       bottom: 9px;
-   }
-}
-@media (max-width: 800px){
-   .header{
-      position: relative;
-      &__wrapper{
-         display: flex;
-         flex-direction: column;
-         align-items: flex-end;
-      }
-      &__logo{
-         display: none;
-      }
-      &__nav{
-         position: absolute;
-         display: flex;
-         flex-direction: column;
-      }
-      &__box{
-         margin-bottom: 35px;
-         position: relative;
-      }
-      &__burger{
-         margin-right: 20px;
-      }
-      &__menu{
-         display: none;
-      }
    }
 }
