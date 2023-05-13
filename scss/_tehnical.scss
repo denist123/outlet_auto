@@ -22,6 +22,9 @@
          font-size: 16px;
          line-height: 19px;
          color: #FFFFFF;
+         &:active{
+            box-shadow: none;
+         }
       }
    }
 }
